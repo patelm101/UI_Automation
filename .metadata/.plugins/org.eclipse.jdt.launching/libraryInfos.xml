@@ -1,5 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <libraryInfos>
+<libraryInfo home="C:\Program Files\OpenLogic\jdk-11.0.21.9-hotspot" version="11.0.21"/>
+<libraryInfo home="C:\Program Files\OpenLogic\jre-8.0.392.08-hotspot" version="1.8.0_392-392">
+<bootpath>
+<entry path="C:\Program Files\OpenLogic\jre-8.0.392.08-hotspot\lib\resources.jar"/>
+<entry path="C:\Program Files\OpenLogic\jre-8.0.392.08-hotspot\lib\rt.jar"/>
+<entry path="C:\Program Files\OpenLogic\jre-8.0.392.08-hotspot\lib\sunrsasign.jar"/>
+<entry path="C:\Program Files\OpenLogic\jre-8.0.392.08-hotspot\lib\jsse.jar"/>
+<entry path="C:\Program Files\OpenLogic\jre-8.0.392.08-hotspot\lib\jce.jar"/>
+<entry path="C:\Program Files\OpenLogic\jre-8.0.392.08-hotspot\lib\charsets.jar"/>
+<entry path="C:\Program Files\OpenLogic\jre-8.0.392.08-hotspot\lib\jfr.jar"/>
+<entry path="C:\Program Files\OpenLogic\jre-8.0.392.08-hotspot\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Program Files\OpenLogic\jre-8.0.392.08-hotspot\lib\ext"/>
+<entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Program Files\OpenLogic\jre-8.0.392.08-hotspot\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\Program Files\OpenLogic\jre-11.0.21.9-hotspot" version="11.0.21"/>
 <libraryInfo home="C:\Program Files\Java\jdk1.8.0_77" version="1.8.0_77">
 <bootpath>
 <entry path="C:\Program Files\Java\jdk1.8.0_77\jre\lib\resources.jar"/>
@@ -17,6 +38,25 @@
 </extensionDirs>
 <endorsedDirs>
 <entry path="C:\Program Files\Java\jdk1.8.0_77\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\Program Files\OpenLogic\jdk-8.0.392.08-hotspot" version="1.8.0_392-392">
+<bootpath>
+<entry path="C:\Program Files\OpenLogic\jdk-8.0.392.08-hotspot\jre\lib\resources.jar"/>
+<entry path="C:\Program Files\OpenLogic\jdk-8.0.392.08-hotspot\jre\lib\rt.jar"/>
+<entry path="C:\Program Files\OpenLogic\jdk-8.0.392.08-hotspot\jre\lib\sunrsasign.jar"/>
+<entry path="C:\Program Files\OpenLogic\jdk-8.0.392.08-hotspot\jre\lib\jsse.jar"/>
+<entry path="C:\Program Files\OpenLogic\jdk-8.0.392.08-hotspot\jre\lib\jce.jar"/>
+<entry path="C:\Program Files\OpenLogic\jdk-8.0.392.08-hotspot\jre\lib\charsets.jar"/>
+<entry path="C:\Program Files\OpenLogic\jdk-8.0.392.08-hotspot\jre\lib\jfr.jar"/>
+<entry path="C:\Program Files\OpenLogic\jdk-8.0.392.08-hotspot\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Program Files\OpenLogic\jdk-8.0.392.08-hotspot\jre\lib\ext"/>
+<entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Program Files\OpenLogic\jdk-8.0.392.08-hotspot\jre\lib\endorsed"/>
 </endorsedDirs>
 </libraryInfo>
 </libraryInfos>

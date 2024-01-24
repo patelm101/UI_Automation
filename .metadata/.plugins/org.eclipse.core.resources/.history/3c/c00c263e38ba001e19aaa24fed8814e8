@@ -1,0 +1,17 @@
+package tests;
+
+import org.openqa.selenium.WebDriver;
+
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class BrowserTest {
+	
+	public static void main(String[] args){
+		WebDriver driver = new FirefoxDriver();
+		//System.setProperty("ChromeDriver", "C:\\Users\\Manish\\Documents\\Myworkspace\\UI_Automation\\SeleniumFramework\\drivers\\chromedriver.exe");
+		//WebDriver crmDriver = new ChromeDriver();
+		//System.setProperty("ChromeDriver", "C:\\Users\\Manish\\Documents\\Myworkspace\\UI_Automation\\SeleniumFramework\\drivers\\geckodriver.exe");
+		driver.get("https://www.hgtv.com/sweepstakes/hgtv-dream-home/sweepstakes");
+	}
+
+}
