@@ -2,10 +2,12 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="SeleniumFramework"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="SeleniumFramework"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -17,6 +19,18 @@
 		</list>
 		<list key="version">
 			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
 		</list>
 	</section>
 	<section name="MavenProjectWizardArchetypePage">
@@ -31,6 +45,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\Manish\Documents\Myworkspace\UI_Automation\JavaProjects"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
