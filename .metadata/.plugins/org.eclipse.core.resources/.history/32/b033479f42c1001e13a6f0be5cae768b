@@ -1,0 +1,50 @@
+package tests;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterMethod;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+
+public class TestNGTests {
+	WebDriver driver;
+
+	@BeforeMethod
+	public void beforeMethod() {
+		System.out.println("Starting Test On Chrome Browser");
+		System.setProperty("webdriver.chrome.driver",
+				"C:\\Users\\Manish\\Documents\\Myworkspace\\UI_Automation\\SeleniumFramework\\drivers\\chromedriver.exe");
+	}
+
+	@AfterMethod
+	public void afterMethod() {
+		driver.close();
+		System.out.println("Finished Test On Chrome Browser");
+	}
+
+	@Test
+	public void firstTest() {
+		String baseUrl = "https://www.toolsqa.com/";
+		System.out.println("Launching Google Chrome browser");
+		driver = new ChromeDriver();
+		driver.get(baseUrl);
+		driver.manage().window().maximize();
+		String testTitle = "Tools QA";
+		String originalTitle = driver.getTitle();
+		Assert.assertEquals(originalTitle, testTitle);
+	}
+
+	@Test
+	public void secondTest() {
+		String baseUrl = "https://www.https://demoqa.com/.com/";
+		System.out.println("Launching Google Chrome browser");
+		driver = new ChromeDriver();
+		driver.get(baseUrl);
+		driver.manage().window().maximize();
+		driver.findElement(By.id("div.col-auto.flex-lg-grow-1.flex-xl-grow-0.d-none.d-lg-flex.order-4.navbar__links-and-search.order-lg-2.ml-lg-auto > div > div:nth-child(1) > ul > li:nth-child(3) > a")).click();
+		
+	}
+	
+}

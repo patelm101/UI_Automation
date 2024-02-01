@@ -1,0 +1,85 @@
+package tests;
+
+import javax.rmi.CORBA.Util;
+import javax.swing.text.Utilities;
+
+import org.apache.commons.lang3.RandomStringUtils;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
+import org.testng.internal.Utils;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterMethod;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+
+public class TestNGTests {
+	WebDriver driver;
+
+	@BeforeMethod
+	public void beforeMethod() {
+		System.out.println("Starting Test On Chrome Browser");
+		System.setProperty("webdriver.chrome.driver",
+				"C:\\Users\\Manish\\Documents\\Myworkspace\\UI_Automation\\SeleniumFramework\\drivers\\chromedriver.exe");
+	}
+
+	@AfterMethod
+	public void afterMethod() {
+		driver.close();
+		System.out.println("Finished Test On Chrome Browser");
+	}
+
+	@Test
+	public void firstTest() {
+		String baseUrl = "https://www.toolsqa.com/";
+		System.out.println("Launching Google Chrome browser");
+		driver = new ChromeDriver();
+		driver.get(baseUrl);
+		driver.manage().window().maximize();
+		String testTitle = "Tools QA";
+		String originalTitle = driver.getTitle();
+		// verify the title
+		Assert.assertEquals(originalTitle, testTitle);
+	}
+
+	@Test
+	public void secondTest() {
+		String demoUrl = "https://demoqa.com/";
+		System.out.println("Launching Google Chrome browser");
+		driver = new ChromeDriver();
+		driver.get(demoUrl);
+		driver.manage().window().maximize();
+		driver.findElement(By.cssSelector("#app > div > div > div.home-body > div > div:nth-child(1)")).click();
+		WebElement elementsTextBox = driver.findElement(By.id("item-0"));
+		elementsTextBox.click();
+		String originalURL = driver.getCurrentUrl();
+		String expactedURL = "https://demoqa.com/text-box";
+		Assert.assertEquals(originalURL, expactedURL);
+		String fullName = RandomStringUtils.randomAlphanumeric(4) + " " + RandomStringUtils.randomAlphabetic(4);
+		String email = RandomStringUtils.randomAlphabetic(4) + "@xyz.com";
+		String address = RandomStringUtils.randomNumeric(3) + " " + RandomStringUtils.randomAlphabetic(4) + "\n"
+				+ RandomStringUtils.randomAlphabetic(5);
+
+		WebElement nameTextBox = driver.findElement(By.id("userName"));
+		WebElement emailTextBox = driver.findElement(By.id("userEmail"));
+		WebElement currentAddrsTextBox = driver.findElement(By.id("currentAddress"));
+		WebElement premAddrsTextBox = driver.findElement(By.id("permanentAddress"));
+		WebElement submitBtn = driver.findElement(By.id("submit"));
+
+		nameTextBox.sendKeys(fullName);
+		emailTextBox.sendKeys(email);
+		currentAddrsTextBox.sendKeys(address);
+		premAddrsTextBox.sendKeys(address);
+		submitBtn.submit();
+
+		// verify the all entered data
+		String nameText = driver.findElement(By.id("name")).getText();
+		String emailText = driver.findElement(By.id("email")).getText();
+		String currentAddrsText = driver.findElement(By.cssSelector("#currentAddress")).getText();
+		String premAddrsText = driver.findElement(By.cssSelector("#permanentAddress")).getText();
+
+		Assert.assertEquals(nameText, "Name: " + fullName);
+	}
+
+}

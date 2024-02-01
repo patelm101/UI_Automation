@@ -5,8 +5,8 @@
     <classes>
       <class name="tests.TestNGTests">
         <methods>
-          <include name="firstTest"/>
           <include name="afterMethod"/>
+          <include name="secondTest"/>
           <include name="beforeMethod"/>
         </methods>
       </class> <!-- tests.TestNGTests -->
