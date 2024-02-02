@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="tests.TestNGTests">
+      <class name="tests.BrowserIETest$TestNGTests">
         <methods>
           <include name="afterMethod"/>
-          <include name="secondTest"/>
+          <include name="firstTest"/>
           <include name="beforeMethod"/>
         </methods>
-      </class> <!-- tests.TestNGTests -->
+      </class> <!-- tests.BrowserIETest$TestNGTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
